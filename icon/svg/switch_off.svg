@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="24px" viewBox="0 0 48 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>switch_off</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Landingpage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Overlay_Demo" transform="translate(-379.000000, -985.000000)" fill-rule="nonzero">
+            <g id="formular" transform="translate(259.000000, 86.000000)">
+                <g id="Group-3" transform="translate(120.000000, 859.000000)">
+                    <g id="switch_off" transform="translate(24.000000, 52.000000) scale(-1, 1) translate(-24.000000, -52.000000) translate(0.000000, 40.000000)">
+                        <rect id="Rectangle-2" fill="#929393" x="0" y="0" width="48" height="24" rx="12"></rect>
+                        <circle id="Oval" fill="#FFFFFF" cx="36" cy="12" r="11"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

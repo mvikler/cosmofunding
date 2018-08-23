@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow_ghost</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Landingpage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Landingpage_v2_final" transform="translate(-1537.000000, -8981.000000)">
+            <g id="PRESSE" transform="translate(260.000000, 8411.000000)">
+                <g id="Group-14" transform="translate(1276.000000, 569.000000)">
+                    <g id="arrow_ghost">
+                        <path d="M26,1.999856 C12.7450571,1.999856 1.999908,12.7449124 1.999908,25.999792 C1.999908,39.2546716 12.7450571,49.999728 26,49.999728 C39.2548101,49.999728 49.999936,39.2546484 49.999936,25.999792 C49.999936,12.7449356 39.2548101,1.999856 26,1.999856 Z" id="Ellipse-741-Kopie-2" stroke="#B8B2A8" stroke-width="2" fill-opacity="0" fill="#B8B2A8"></path>
+                        <g id="icon/expand-grey" transform="translate(25.000000, 26.000000) rotate(90.000000) translate(-25.000000, -26.000000) translate(5.000000, 6.000000)" stroke-width="1">
+                            <g id="sharp-keyboard_arrow_down-24px-(2)">
+                                <g id="Bounding_Boxes">
+                                    <polygon id="Shape" points="0 0 40 0 40 40 0 40"></polygon>
+                                </g>
+                                <g id="Sharp" transform="translate(10.000000, 13.333333)" fill="#929393" fill-rule="nonzero">
+                                    <polygon id="Shape" points="2.35 0.983333333 10 8.61666667 17.65 0.983333333 20 3.33333333 10 13.3333333 0 3.33333333"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

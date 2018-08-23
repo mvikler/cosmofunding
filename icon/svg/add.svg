@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/add</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Landingpage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.400000006">
+        <g id="Landingpage_v2_final" transform="translate(-848.000000, -4977.000000)">
+            <g id="PROZESS" transform="translate(290.000000, 4582.000000)">
+                <g id="01" transform="translate(153.000000, 300.000000)">
+                    <g id="Group-12" transform="translate(264.000000, 50.000000)">
+                        <g id="Group" transform="translate(0.000000, 41.000000)">
+                            <g id="icon/add" transform="translate(137.000000, 0.000000)">
+                                <g id="sharp-add-24px">
+                                    <g id="Bounding_Boxes">
+                                        <polygon id="Shape" points="0 0 20 0 20 20 0 20"></polygon>
+                                    </g>
+                                    <g id="Sharp" transform="translate(4.166667, 4.166667)" fill="#702082" fill-rule="nonzero">
+                                        <polygon id="Shape" points="11.6666667 6.66666667 6.66666667 6.66666667 6.66666667 11.6666667 5 11.6666667 5 6.66666667 0 6.66666667 0 5 5 5 5 0 6.66666667 0 6.66666667 5 11.6666667 5"></polygon>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
