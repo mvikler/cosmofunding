@@ -1,5 +1,35 @@
 $(document).ready(function(){
 
+
+  // Check for cookie and store if none on accept
+
+
+  if (Cookies.get('token') === undefined){
+    $('.disclaimer').fadeIn();
+    $('main').addClass('no-scroll');
+  }
+
+  // On accepting the disclaimer hide the overlay
+  // and remove class from main that prevents scrolling
+
+  $('.disclaimer').submit(function(event){
+    event.preventDefault();
+    window.scrollTo(0, 0);
+    var value = $('#residence').val()
+    if (value == 'switzerland'){
+
+      // add code for adding cookie
+
+      $('.terms-overlay-wrapper').fadeOut();
+      $('main').removeClass('no-scroll');
+    } else {
+      window.location = 'https://www.vontobel.com/';
+    }
+  })
+
+
+  //  Headroom (navbar hide and show on scroll)
+
   // grab an element
   var myElement = document.querySelector("header");
   // construct an instance of Headroom, passing the element
@@ -123,24 +153,6 @@ $(document).ready(function(){
     $('.point-icon').removeClass('active');
     $(this ).find('.point-icon').addClass('active');
 
-  })
-
-  // On accepting the disclaimer hide the overlay
-  // and remove class from main that prevents scrolling
-
-  $('.disclaimer').submit(function(event){
-    event.preventDefault();
-    window.scrollTo(0, 0);
-    var value = $('#residence').val()
-    if (value == 'switzerland'){
-
-      // add code for adding cookie
-
-      $('.terms-overlay-wrapper').fadeOut();
-      $('main').removeClass('no-scroll');
-    } else {
-      window.location = 'https://www.vontobel.com/';
-    }
   })
 
 
