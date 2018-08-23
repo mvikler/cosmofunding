@@ -4,10 +4,10 @@ $(document).ready(function(){
   // Check for cookie and store if none on accept
 
 
-  if (Cookies.get('token') === undefined){
-    $('.disclaimer').fadeIn();
-    $('main').addClass('no-scroll');
-  }
+  // if (Cookies.get('token') === undefined){
+  //   $('.disclaimer').fadeIn();
+  //   $('main').addClass('no-scroll');
+  // }
 
   // On accepting the disclaimer hide the overlay
   // and remove class from main that prevents scrolling
