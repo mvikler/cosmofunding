@@ -1494,7 +1494,7 @@ input:checked + .slider:before {
   min-height: 370px;
 }
 
-@media (min-width: 768px) and (max-width: 1440px) {
+@media (min-width: 768px) {
 
     /* show 3 items */
     .carousel-inner .carousel-item.active,
@@ -1563,7 +1563,14 @@ input:checked + .slider:before {
     display: none;
   }
 
-  .carousel-item {
+  #firstCarousel .carousel-item {
     display: block;
+  }
+
+  #firstCarousel .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    top: 0;
+    right: 0;
+    z-index: 1;
   }
 }

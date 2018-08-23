@@ -15,16 +15,16 @@ $(document).ready(function(){
 
   $(window).resize(function() {
     if ($(window).width() < 1440){
-      $('.carousel').carousel();
+      $('#firstCarousel').carousel();
     }
     else {
-      $('.carousel').carousel('pause');
+      $('#firstCarousel').carousel('pause');
     }
   })
 
   // 3 items per slide
 
-  $('#firstCarousel').on('slide.bs.carousel', function (e) {
+  $('.carousel').on('slide.bs.carousel', function (e) {
 
       var $e = $(e.relatedTarget);
       var idx = $e.index();
