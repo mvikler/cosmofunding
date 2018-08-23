@@ -194,8 +194,17 @@ $(document).ready(function(){
 
     $('.register-form').submit(function(event){
       event.preventDefault();
+
+      var m = []; // Success message
+
+      lang = document.documentElement.lang;
+      m['de'] = 'Vielen Dank, die Unterlagen werden Ihnen zugeschickt';
+      m['en'] = '';       //
+      m['it'] = '';       //   Add messages for other languages
+      m['fr'] = '';       //
+
       $('#register-submit').addClass('btn-success disabled').removeClass('btn-primary');
-      $('#register-submit').html('<i class="fas fa-check mr-3"></i>Vielen Dank, die Unterlagen werden Ihnen zugeschickt')
+      $('#register-submit').html('<i class="fas fa-check mr-3"></i>' + m[lang]);
     })
 
     // On collapse, hide already collapsed items
