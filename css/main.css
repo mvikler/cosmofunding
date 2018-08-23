@@ -1104,6 +1104,10 @@ select::-ms-expand {
     font-size: 1.5rem;
   }
 
+  .circle-point > div {
+    padding: 0 10px;
+  }
+
   h4 {
     font-size: 1rem;
   }
