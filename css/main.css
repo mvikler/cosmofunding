@@ -1099,6 +1099,14 @@ select::-ms-expand {
     left: 85px;
     z-index: 0;;
   }
+
+  .point-number {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -1159,6 +1167,12 @@ select::-ms-expand {
   color: #000000;
   padding: 2rem;
   margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .collapse-container {
+    padding: 1rem 0;
+  }
 }
 
 .collapse-toggle {
@@ -1384,6 +1398,15 @@ footer .footer-links a::after {
   border: #E3E3E3 1px solid;
   color: #c0c0c0;
   font-weight: 600;
+}
+
+@media (max-width: 768px){
+  .overlay-form .nav .nav-link{
+    padding: .5rem 3rem;
+  }
+  .overlay-form .nav .nav-item {
+    width: 50%;
+  }
 }
 
 .overlay-form .nav .nav-link.active {
