@@ -26,7 +26,7 @@ $(document).ready(function(){
       $('main').removeClass('no-scroll');
 
       (function(a, b, c, d) {
-            a = 'http://tags.tiqcdn.com/utag/vontobel/main/prod/utag.js';
+            a = 'https://tags.tiqcdn.com/utag/vontobel/main/prod/utag.js';
             b = document;
             c = 'script';
             d = b.createElement(c);
