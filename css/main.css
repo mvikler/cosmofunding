@@ -249,6 +249,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   margin-bottom: 3rem;
 }
 
@@ -784,6 +785,24 @@ select::-ms-expand {
   transform: translate(-50%, -50%);
 }
 
+@media (min-width: 768px) and (max-width: 1200px) {
+  .card-img {
+    height: 2rem;
+  }
+
+  .card h4 {
+    font-size: 1.2rem
+  }
+
+  .card {
+    font-size: .9rem;
+  }
+
+  .card ul {
+    padding: 0;
+  }
+}
+
 
 
 /*--- Cells ---*/
@@ -1098,7 +1117,7 @@ select::-ms-expand {
     padding: 0 10px;
   }
 
-  h4 {
+  .point-text h4 {
     font-size: 1rem;
   }
 }

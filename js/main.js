@@ -4,10 +4,10 @@ $(document).ready(function(){
   // Check for cookie and store if none on accept
 
 
-  // if (Cookies.get('token') === undefined){
-  //   $('.disclaimer').fadeIn();
-  //   $('main').addClass('no-scroll');
-  // }
+  if (document.cookie == ""){
+    $('.disclaimer').fadeIn();
+    $('main').addClass('no-scroll');
+  }
 
   // On accepting the disclaimer hide the overlay
   // and remove class from main that prevents scrolling
@@ -18,10 +18,24 @@ $(document).ready(function(){
     var value = $('#residence').val()
     if (value == 'switzerland'){
 
-      // add code for adding cookie
+      // Set cookie
+
+      document.cookie = "country=switzerland";
 
       $('.terms-overlay-wrapper').fadeOut();
       $('main').removeClass('no-scroll');
+
+      (function(a, b, c, d) {
+            a = 'http://tags.tiqcdn.com/utag/vontobel/main/prod/utag.js';
+            b = document;
+            c = 'script';
+            d = b.createElement(c);
+            d.src = a;
+            d.type = 'text/java' + c;
+            d.async = true;
+            a = b.getElementsByTagName(c)[0];
+            a.parentNode.insertBefore(d, a);
+        })();
     } else {
       window.location = 'https://www.vontobel.com/';
     }
