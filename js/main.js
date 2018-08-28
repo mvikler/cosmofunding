@@ -92,7 +92,7 @@ $(document).ready(function(){
 
   // Smooth scroling
 
-  $('a[href*="#"]')
+  $('header a[href*="#"]')
     // Remove links that don't actually link to anything
     .not('[href="#"]')
     .not('[href="#0"]')
