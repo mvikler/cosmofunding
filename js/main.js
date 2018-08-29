@@ -281,8 +281,8 @@ $(document).ready(function(){
         .removeClass('btn-primary')
         .html('<i class="fas fa-check mr-3"></i>' + m[lang])
 
-      var form = $(this).find('form');
-      var data = form.serializeArray();
+      // var form = $(this).find('form');
+      // var data = form.serializeArray();
 
       // Add info about which form is being submited
       // the issuer one or the investor
