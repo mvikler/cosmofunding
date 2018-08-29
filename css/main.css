@@ -639,7 +639,7 @@ header:hover .bar {
     display: flex;
     overflow: hidden;
     flex-direction: row;
-    width: 35px;
+    width: 30px;
     transition: all 0.2s linear;
   }
 
