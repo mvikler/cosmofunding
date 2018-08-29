@@ -281,6 +281,11 @@ $(document).ready(function(){
         .removeClass('btn-primary')
         .html('<i class="fas fa-check mr-3"></i>' + m[lang])
 
+      var form = $(this).find('form');
+
+      var data = form.serialize();
+
+      $.post('email_script.php', data, 'json');
     })
 
     // On collapse, hide already collapsed items

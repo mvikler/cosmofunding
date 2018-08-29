@@ -1,0 +1,190 @@
+<form class="needs-validation" action="email_script.php" method="post" novalidate>
+  <div class="form-group">
+    <label for="authority">Ich bin</label>
+    <div class="designation-select">
+      <a href="#" class="legal btn btn-designation selected">Juristische Person</a>
+      <a href="#" class="authority btn btn-designation">Behörde</a>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <div class="col-4">
+      <label for="bezeichnung">Bezeichnung</label>
+      <select class="select-legal form-control" name="bezeichnung">
+        <option value="" disabled selected>Auswählen</option>
+        <option value="bund">Aktiengesellschaft</option>
+        <option value="kanton">GmbH</option>
+        <option value="gemeinde">Kommanditgesellschaft</option>
+        <option value="gemeinde">Kommanditaktiengesellschaft</option>
+        <option value="gemeinde">Genossenschaft</option>
+        <option value="gemeinde">SICAF/SICAV</option>
+        <option value="gemeinde">Stiftung</option>
+        <option value="gemeinde">Andere</option>
+      </select>
+      <select class="select-authority form-control" name="bezeichnung">
+        <option value="" disabled selected>Auswählen</option>
+        <option value="bund">Bund</option>
+        <option value="kanton">Kanton</option>
+        <option value="gemeinde">Gemeinde</option>
+      </select>
+      </div>
+      <div class="col-8">
+        <label for="organizationName">Name der Organisation</label>
+        <input class="form-control" type="text" name="organizationName" value="" required>
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <div class="col-md-6">
+        <label for="name">Name</label>
+        <input class="form-control" type="text" name="name" value="" required>
+      </div>
+      <div class="col-md-6">
+        <label for="lastname">Lastname</label>
+        <input class="form-control" type="text" name="lastname" value="" required>
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <div class="col-md-8">
+        <label for="street">Straße, Hausnummer</label>
+        <input class="form-control" type="text" name="street" value="" required>
+      </div>
+      <div class="col-md-4">
+        <label for="plz">PLZ</label>
+        <input class="form-control" type="text" pattern="[0-9]{4}"  name="plz" value="" required>
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <div class="col-md-6">
+        <label for="kanton">Kanton</label>
+        <input class="form-control" type="text" name="kanton" value="">
+      </div>
+      <div class="col-md-6">
+        <label for="e-mail">E-mail</label>
+        <input class="form-control" type="email" name="email" value="" required>
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <div class="col-md-6">
+        <label for="phone">Telefon</label>
+        <input class="form-control" type="text" name="phone" value="">
+      </div>
+      <div class="col-md-6">
+        <label for="website">Website</label>
+        <input class="form-control" type="text" name="website" value="">
+      </div>
+    </div>
+
+    <div class="form-group row align-items-center">
+      <div class="col-md-1 mr-2">
+        <label class="switch">
+          <input type="checkbox" required>
+          <span class="slider round"></span>
+        </label>
+      </div>
+      <div class="col">
+        <strong>Bitte bestätigen Sie</strong>, dass Sie <a href="https://www.vontobel.com/de-ch/rechtliche-hinweise/nutzungsbedingungen/" target="_blank"><strong>die rechtlichen Hinweise</strong></a> im Zusammenhang mit der Benutzung unserer Website und den damit verbundenen Services
+      </div>
+    </div>
+    <button id="register-submit" type="submit" class="btn btn-primary font-bold">Registrierung Anfragen</button>
+  </form>
+  </div>
+
+  <div class="col-md-8 offset-md-3 show active tab-pane fade" id="register-issuer" role="tabpanel" aria-labelledby="register-issuer-tab">
+    <form class="needs-validation" action="#" method="post" novalidate>
+      <div class="form-group">
+        <label for="authority">Ich bin</label>
+        <div class="designation-select">
+          <a href="#" class="legal btn btn-designation selected">Juristische Person</a>
+          <a href="#" class="authority btn btn-designation">Behörde</a>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="col-4">
+          <label for="bezeichnung">Bezeichnung</label>
+          <select class="select-legal form-control" name="bezeichnung">
+            <option value="" disabled selected>Choose</option>
+            <option value="bund">Aktiengesellschaft</option>
+            <option value="kanton">GmbH</option>
+            <option value="gemeinde">Kommanditgesellschaft</option>
+            <option value="gemeinde">Kommanditaktiengesellschaft</option>
+            <option value="gemeinde">Genossenschaft</option>
+            <option value="gemeinde">SICAF/SICAV</option>
+            <option value="gemeinde">Stiftung</option>
+            <option value="gemeinde">Andere</option>
+          </select>
+          <select class="select-authority form-control" name="bezeichnung">
+            <option value="" disabled selected>Choose</option>
+            <option value="bund">Bund</option>
+            <option value="kanton">Kanton</option>
+            <option value="gemeinde">Gemeinde</option>
+          </select>
+          </div>
+          <div class="col-8">
+            <label for="organizationName">Name der Organisation</label>
+            <input class="form-control" type="text" name="organizationName" value="" required>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <div class="col-md-6">
+            <label for="name">Name</label>
+            <input class="form-control" type="text" name="name" value="" required>
+          </div>
+          <div class="col-md-6">
+            <label for="lastname">Lastname</label>
+            <input class="form-control" type="text" name="lastname" value="" required>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <div class="col-md-8">
+            <label for="street">Straße, Hausnummer</label>
+            <input class="form-control" type="text" name="street" value="" required>
+          </div>
+          <div class="col-md-4">
+            <label for="plz">PLZ</label>
+            <input class="form-control" type="text" pattern="[0-9]{4}" name="plz" value="" required>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <div class="col-md-6">
+            <label for="kanton">Kanton</label>
+            <input class="form-control" type="text" name="kanton" value="">
+          </div>
+          <div class="col-md-6">
+            <label for="e-mail">E-mail</label>
+            <input class="form-control" type="email" name="email" value="" required>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <div class="col-md-6">
+            <label for="phone">Telefon</label>
+            <input class="form-control" type="text" name="phone" value="">
+          </div>
+          <div class="col-md-6">
+            <label for="website">Website</label>
+            <input class="form-control" type="text" name="website" value="">
+          </div>
+        </div>
+
+        <div class="form-group row align-items-center">
+          <div class="col-md-1 mr-2">
+            <label class="switch">
+              <input type="checkbox" required>
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <div class="col">
+            <strong>Bitte bestätigen Sie</strong>, dass Sie <a href="https://www.vontobel.com/de-ch/rechtliche-hinweise/nutzungsbedingungen/" target="_blank"><strong>die rechtlichen Hinweise</strong></a> im Zusammenhang mit der Benutzung unserer Website und den damit verbundenen Services
+          </div>
+        </div>
+        <button id="register-submit" type="submit" class="btn btn-primary font-bold">Registrierung Anfragen</button>
+      </form>
+  </div>
