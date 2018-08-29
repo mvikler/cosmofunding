@@ -799,7 +799,7 @@ select::-ms-expand {
 
 .card {
   border-radius: 0;
-  height: 370px;
+  height: 390px;
 }
 
 .card-purple {
@@ -936,6 +936,8 @@ select::-ms-expand {
   align-items: center;
   z-index: 2;
   transition: all 0.3s;
+  border: 1px #702082 solid;
+  background-color:#fff;
 }
 
 .point-icon.active {
