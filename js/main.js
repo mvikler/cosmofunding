@@ -104,8 +104,18 @@ $(document).ready(function(){
 
   // Set nav height
 
+  var h;
+  console.log($(window).height());
+  console.log($('header').height());
   h = $(window).height() - $('header').height();
   $('.nav-drop').height(h);
+
+  // Expand languages on mobile
+
+  $('.mobile-languages ul li:first').click(function(event){
+    event.preventDefault();
+    $('.mobile-languages ul').toggleClass('expanded');
+  })
 
   // Header change background on options dropdown
 
@@ -221,7 +231,7 @@ $(document).ready(function(){
         $('#register-investor-tab').addClass('active');
         $('#register-issuer-tab').removeClass('active');
         $('#register-investor').addClass('active show');
-        $('#register-issuer').removeClass('active show');  
+        $('#register-issuer').removeClass('active show');
       }
     })
 
@@ -262,9 +272,9 @@ $(document).ready(function(){
 
       lang = document.documentElement.lang;
       m['de'] = 'Vielen Dank, die Unterlagen werden Ihnen zugeschickt';
-      m['en'] = '';       //
-      m['it'] = '';       //   Add messages for other languages
-      m['fr'] = '';       //
+      m['en'] = 'Thank you, we will send you the relevant documents.';
+      m['it'] = 'Grazie, vi invieremo i documenti.';
+      m['fr'] = 'Merci, les documents vous seront envoyés.';
 
       $('#register-submit').addClass('btn-success disabled').removeClass('btn-primary');
       $('#register-submit').html('<i class="fas fa-check mr-3"></i>' + m[lang]);
