@@ -104,9 +104,7 @@ $(document).ready(function(){
 
   // Set nav height
 
-  var h;
-  console.log($(window).height());
-  console.log($('header').height());
+  var h;;
   h = $(window).height() - $('header').height();
   $('.nav-drop').height(h);
 
@@ -267,7 +265,7 @@ $(document).ready(function(){
 
     // On submit register form
 
-    $('.register-form form').submit(function(event){
+    $('.register-form #register-issuer, .register-form #register-investor').submit(function(event){
       event.preventDefault();
 
       var m = []; // Success message
@@ -282,6 +280,7 @@ $(document).ready(function(){
         .addClass('btn-success disabled')
         .removeClass('btn-primary')
         .html('<i class="fas fa-check mr-3"></i>' + m[lang])
+
     })
 
     // On collapse, hide already collapsed items
