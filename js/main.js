@@ -223,17 +223,17 @@ $(document).ready(function(){
       $('.register-form').fadeIn();
       openedForm = $('.register-form');
       form = $('.register-form form');
-      if ($(this).hasClass('register-issuer')){
-        $('#register-issuer-tab').addClass('active');
-        $('#register-investor-tab').removeClass('active');
-        $('#register-issuer').addClass('active show');
-        $('#register-investor').removeClass('active show');
-      }
-      else {
+      if ($(this).hasClass('register-investor')){
         $('#register-investor-tab').addClass('active');
         $('#register-issuer-tab').removeClass('active');
         $('#register-investor').addClass('active show');
         $('#register-issuer').removeClass('active show');
+      }
+      else {
+        $('#register-issuer-tab').addClass('active');
+        $('#register-investor-tab').removeClass('active');
+        $('#register-issuer').addClass('active show');
+        $('#register-investor').removeClass('active show');
       }
     })
 
