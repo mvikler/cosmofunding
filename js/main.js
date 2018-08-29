@@ -286,11 +286,10 @@ $(document).ready(function(){
 
       // Add info about which form is being submited
       // the issuer one or the investor
-      var subject = $(this).attr('id')
-      data.push({name: "subject", value: subject})
+      // var subject = $(this).attr('id')
+      // data.push({name: "subject", value: subject})
 
-      // Send data to script via AJAX to avoid page reload
-      $.post('email_script.php', data, 'json');
+      $(this).submit();
     })
 
     // On collapse, hide already collapsed items
