@@ -134,8 +134,8 @@ $(document).ready(function(){
           autoplay: true,
           autoplaySpeed: 3000,
           appendArrows: $('.benefitsControls.controls'),
-          prevArrow: '<a href="#" role="button" data-slide="prev" class="btn-round btn-outline-primary mr-2" aria-label="Next"><i class="fas fa-chevron-left"></i></a>',
-          nextArrow: '<a  href="#" role="button" data-slide="next" class="btn-round btn-primary"><i class="fas fa-chevron-right"></i></a>',
+          prevArrow: '<a href="#" role="button" class="btn-round btn-outline-primary mr-2" aria-label="Next"><i class="fas fa-chevron-left"></i></a>',
+          nextArrow: '<a  href="#" role="button" class="btn-round btn-primary"><i class="fas fa-chevron-right"></i></a>',
           responsive: [
             {
               breakpoint: 768,
@@ -167,8 +167,8 @@ $(document).ready(function(){
     autoplay: true,
     autoplaySpeed: 3000,
     appendArrows: $('.pressControls.controls'),
-    prevArrow: '<a href="#" role="button" data-slide="prev" class="btn-round btn-outline-primary mr-2" aria-label="Next"><i class="fas fa-chevron-left"></i></a>',
-    nextArrow: '<a  href="#" role="button" data-slide="next" class="btn-round btn-primary"><i class="fas fa-chevron-right"></i></a>',
+    prevArrow: '<a href="#" role="button" class="btn-round btn-outline-primary mr-2" aria-label="Next"><i class="fas fa-chevron-left"></i></a>',
+    nextArrow: '<a  href="#" role="button" class="btn-round btn-primary"><i class="fas fa-chevron-right"></i></a>',
     responsive: [
       {
         breakpoint: 768,

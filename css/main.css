@@ -558,7 +558,7 @@ header:hover .bar {
   }
 
   header .nav-link {
-    padding: 0rem 1rem 1.2rem 1rem !important;
+    padding: 0rem 0.7rem 1.2rem 0.7rem !important;
     border-bottom: 5px transparent solid;
     transition: all 0.3s;
   }
