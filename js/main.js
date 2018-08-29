@@ -4,10 +4,10 @@ $(document).ready(function(){
   // Check for cookie and store if none on accept
 
 
-  if (document.cookie == ""){
-    $('.disclaimer').fadeIn();
-    $('main').addClass('no-scroll');
-  }
+  // if (document.cookie == ""){
+  //   $('.disclaimer').fadeIn();
+  //   $('main').addClass('no-scroll');
+  // }
 
   // On accepting the disclaimer hide the overlay
   // and remove class from main that prevents scrolling
@@ -54,40 +54,6 @@ $(document).ready(function(){
   $('.navbar-toggler').on('click', function(){
     $('.navbar').toggleClass('navbar-background');
   })
-
-  // Start and stop carousel depending on the screen width
-
-  $(window).resize(function() {
-    if ($(window).width() < 1440){
-      $('#firstCarousel').carousel();
-    }
-    else {
-      $('#firstCarousel').carousel('pause');
-    }
-  })
-
-  // 3 items per slide
-
-  $('.carousel').on('slide.bs.carousel', function (e) {
-
-      var $e = $(e.relatedTarget);
-      var idx = $e.index();
-      var itemsPerSlide = 3;
-      var totalItems = $('.carousel-item').length;
-
-      if (idx >= totalItems-(itemsPerSlide-1)) {
-          var it = itemsPerSlide - (totalItems - idx);
-          for (var i=0; i<it; i++) {
-              // append slides to end
-              if (e.direction=="left") {
-                  $('.carousel-item').eq(i).appendTo('.carousel-inner');
-              }
-              else {
-                  $('.carousel-item').eq(0).appendTo('.carousel-inner');
-              }
-          }
-      }
-  });
 
 
   // Smooth scroling
@@ -153,6 +119,65 @@ $(document).ready(function(){
       $('.active').removeClass('active')
     }, 400)
   });
+
+  // Benefits slider
+
+  var slickActivated;
+
+  function startSlider (w) {
+    if (w.matches) {
+      slickActivated = true;
+      $('.benefitsSlider').slick({
+          infinite: true,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          appendArrows: $('.benefitsControls.controls'),
+          prevArrow: '<a href="#" role="button" data-slide="prev" class="btn-round btn-outline-primary mr-2" aria-label="Next"><i class="fas fa-chevron-left"></i></a>',
+          nextArrow: '<a  href="#" role="button" data-slide="next" class="btn-round btn-primary"><i class="fas fa-chevron-right"></i></a>',
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+          ]
+        });
+    }
+    else {
+      if (slickActivated) {
+        $('.benefitsSlider').slick('unslick');
+      }
+    }
+  }
+
+  var w = window.matchMedia("(max-width: 1200px)")
+  startSlider(w);
+  w.addListener(startSlider);
+
+  // Press slider
+
+  $('.pressSlider').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    appendArrows: $('.pressControls.controls'),
+    prevArrow: '<a href="#" role="button" data-slide="prev" class="btn-round btn-outline-primary mr-2" aria-label="Next"><i class="fas fa-chevron-left"></i></a>',
+    nextArrow: '<a  href="#" role="button" data-slide="next" class="btn-round btn-primary"><i class="fas fa-chevron-right"></i></a>',
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
+  })
 
 
   // Show correct dialog on 'More information' in circle section
