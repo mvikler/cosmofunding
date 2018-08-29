@@ -58,7 +58,7 @@ $(document).ready(function(){
 
   // Smooth scroling
 
-  $('header a[href*="#"], .scroll-down-chevron')
+  $('.nav-drop a[href*="#"], .scroll-down-chevron')
     // Remove links that don't actually link to anything
     .not('[href="#"]')
     .not('[href="#0"]')
@@ -210,7 +210,9 @@ $(document).ready(function(){
     var openedForm;
     $('.close-form').click(function(event){
       event.preventDefault();
-      form[0].reset();
+      $('form').each(function(){
+        $(this)[0].reset();
+      })
       openedForm.fadeOut();
     })
 
@@ -265,7 +267,7 @@ $(document).ready(function(){
 
     // On submit register form
 
-    $('.register-form').submit(function(event){
+    $('.register-form form').submit(function(event){
       event.preventDefault();
 
       var m = []; // Success message
@@ -276,8 +278,10 @@ $(document).ready(function(){
       m['it'] = 'Grazie, vi invieremo i documenti.';
       m['fr'] = 'Merci, les documents vous seront envoyés.';
 
-      $('#register-submit').addClass('btn-success disabled').removeClass('btn-primary');
-      $('#register-submit').html('<i class="fas fa-check mr-3"></i>' + m[lang]);
+      $(this).find('#register-submit')
+        .addClass('btn-success disabled')
+        .removeClass('btn-primary')
+        .html('<i class="fas fa-check mr-3"></i>' + m[lang])
     })
 
     // On collapse, hide already collapsed items
