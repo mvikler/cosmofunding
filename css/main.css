@@ -527,11 +527,7 @@ header:hover .bar {
     display: none;
   }
 
-  .nav-drop {
-    display: flex;
-    align-items: center;
-    height: 100%!important;
-  }
+
 
   .logo-holder {
     padding: 37px 10px 0;
@@ -577,40 +573,38 @@ header:hover .bar {
 }
 
 
-@media (max-width: 1440px) {
-  .nav-open {
+.nav-open {
+  position: absolute;
+  display: inline-block;
+  right: 130px;
+  bottom: 23px;
+  font-size: 1.5rem;
+}
+.nav-drop {
     position: absolute;
-    display: inline-block;
-    right: 130px;
-    bottom: 23px;
-    font-size: 1.5rem;
-  }
-  .nav-drop {
-      position: absolute;
-      right: 0;
-      top: 100%;
-      background: #373a36;
-      width: 350px;
-      transform: translateX(110%);
-      padding: 20px;
-      font-weight: bold;
-      z-index: 605;
-      box-shadow: 0px 12px 30px 2px #000;
-  }
+    right: 0;
+    top: 100%;
+    background: #373a36;
+    width: 350px;
+    transform: translateX(110%);
+    padding: 20px;
+    font-weight: bold;
+    z-index: 605;
+    box-shadow: 0px 12px 30px 2px #000;
+}
 
-  .nav-drop .register {
-    position: absolute;
-    bottom: 65px;
-  }
+.nav-drop .register {
+  position: absolute;
+  bottom: 65px;
+}
 
-  .nav > ul > li > a {
-    color: #FFFFFF;
-    padding: 10px 50px 10px 35px;
-  }
+.nav > ul > li > a {
+  color: #FFFFFF;
+  padding: 10px 50px 10px 35px;
+}
 
-  header .register {
-    margin: 10px 0 0 25px;
-  }
+header .register {
+  margin: 10px 0 0 25px;
 }
 
 @media (max-width: 768px) {
