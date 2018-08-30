@@ -806,6 +806,12 @@ select::-ms-expand {
   height: 390px;
 }
 
+@media (max-width: 992px) {
+  .card {
+    height: 420px;
+  }
+}
+
 .card-purple {
   background-color: #702082;
   color: #FFFFFF;
