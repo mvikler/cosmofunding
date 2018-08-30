@@ -82,8 +82,8 @@ a:hover {
 .btn-primary:active,
 .btn-primary:active:focus {
   color: #FFFFFF;
-  background-color: #702082!important;
-  border: 2px solid #702082!important;
+  background-color: #88269e!important;
+  border: 2px solid #88269e!important;
   box-shadow: none;
 }
 
@@ -204,6 +204,10 @@ a:hover {
   font-family: 'vontobel_serif';
 }
 
+.vontobel-bold {
+  font-family: 'vontobel_bold'
+}
+
 .dropdown-menu {
     min-width: auto;
 }
@@ -303,7 +307,7 @@ header, .headroom--top {
 
 header, .headroom--top a {
   color: #fff;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .header-logo,
@@ -687,7 +691,7 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: url('../img/arrow_purple.svg') 96% / 8% no-repeat #eee;
+  background: url('../img/arrow_purple.svg') 96% / 16px no-repeat #eee;
 }
 
 /* CAUTION: IE hackery ahead */
@@ -718,7 +722,7 @@ select::-ms-expand {
 @media (min-width: 768px){
   .landing h1 {
     font-size: 3.6rem;
-    font-family: 'vontobel_serif';
+    font-family: 'vontobel_bold';
     font-weight: 700;
   }
 
@@ -1223,14 +1227,14 @@ select::-ms-expand {
   }
 }
 
-.collapse-toggle {
+.collapse-toggler {
   width: 20px;
   height: 3px;
   background-color: #702082;
   position: absolute;
 }
 
-.collapse-toggle::after {
+.collapse-toggler::after {
   transition: all 0.5s;
   content: ' ';
   opacity: 1;
@@ -1241,8 +1245,14 @@ select::-ms-expand {
   left: 9px;
   bottom: -8px;
 }
-.opened.collapse-toggle::after {
+.collapse-toggle.opened .collapse-toggler::after {
   opacity: 0;
+}
+
+.collapse-toggle {
+  width: 20px;
+  height: 20px;
+  padding-top: 10px;
 }
 
 
@@ -1405,6 +1415,20 @@ footer .footer-links a::after {
   overflow-y: scroll;
   background-color: #E3E3E3;
   padding: 2rem 5rem;
+}
+
+@media (max-width: 768px) {
+  .overlay-body {
+    width: auto;
+  }
+
+  .overlay-body > .container {
+    padding: 0 1rem;
+  }
+
+  .terms {
+    padding: 2rem 1rem;
+  }
 }
 
 /*--- Register form ---*/
