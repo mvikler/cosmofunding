@@ -270,7 +270,7 @@ $(document).ready(function(){
 
     // On submit register form
 
-    $('.register-form #register-issuer, .register-form #register-investor', '#demo-request').submit(function(event){
+    $('.register-form #register-issuer, .register-form #register-investor, #demo-request').submit(function(event){
       event.preventDefault();
 
       var m = []; // Success message
@@ -281,12 +281,13 @@ $(document).ready(function(){
       m['it'] = 'Grazie, vi invieremo i documenti.';
       m['fr'] = 'Merci, les documents vous seront envoyés.';
 
-      $(this).find('#register-submit')
+      $(this).find('.register-submit')
         .addClass('btn-success disabled')
         .removeClass('btn-primary')
         .html('<i class="fas fa-check mr-3"></i>' + m[lang])
 
         var form = $(this).find('form');
+        console.log('form: ' + form)
         var data = form.serializeArray();
 
         // Add info about which form is being submited
@@ -295,6 +296,7 @@ $(document).ready(function(){
         data.push({name: "subject", value: subject})
 
         // Send data to script via AJAX to avoid page reload
+        console.log('data: ' + data)
         $.post('email_script.php', data, 'json');
     })
 
