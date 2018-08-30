@@ -37,7 +37,7 @@ $mail->Host = 'localhost';
 $mail->SMTPAuth = false;
 
 $mail->setFrom('merkur@cosmofunding.com', 'Mailer');
-$mail->addAddress('merkur@cosmofunding.com')
+$mail->addAddress('merkur@cosmofunding.com');
 
 $mail->isHTML(true);
 $mail->Body=$message;
