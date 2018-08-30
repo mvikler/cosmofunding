@@ -1562,6 +1562,7 @@ input:checked + .slider:before {
   transform: translateX(21px);
 }
 
+
 /* Rounded sliders for checkboxes */
 .slider.round {
   border-radius: 34px;
