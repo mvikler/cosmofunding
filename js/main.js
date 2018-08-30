@@ -265,7 +265,7 @@ $(document).ready(function(){
 
     // On submit register form
 
-    $('.register-form #register-issuer, .register-form #register-investor').submit(function(event){
+    $('.register-form #register-issuer, .register-form #register-investor', '#demo-request').submit(function(event){
       event.preventDefault();
 
       var m = []; // Success message
@@ -294,7 +294,6 @@ $(document).ready(function(){
     })
 
     // On collapse, hide already collapsed items
-
 
     $('.collapse-toggle').on('click', function(){
         $('.collapse-toggle.opened').not(this).removeClass('opened');
