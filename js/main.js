@@ -4,10 +4,10 @@ $(document).ready(function(){
   // Check for cookie and store if none on accept
 
 
-  if (document.cookie == ""){
-    $('.disclaimer').fadeIn();
-    $('main').addClass('no-scroll');
-  }
+  // if (document.cookie == ""){
+  //   $('.disclaimer').fadeIn();
+  //   $('main').addClass('no-scroll');
+  // }
 
   // On accepting the disclaimer hide the overlay
   // and remove class from main that prevents scrolling
@@ -100,6 +100,11 @@ $(document).ready(function(){
     event.preventDefault();
     $(this).toggleClass('change');
     $('.nav-drop').toggleClass('show');
+  })
+
+  $('.nav-link').click(function(event){
+    $('.nav-open').removeClass('change');
+    $('.nav-drop').removeClass('show');
   })
 
   // Set nav height
